@@ -1,0 +1,81 @@
+/* reset */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* сторінка */
+
+.container {
+    position: relative;
+
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    outline: 5px solid pink;
+}
+
+.square {
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+
+    background-color: rgb(255, 0, 0);
+
+    animation-name: squareChange;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes squareChange {
+
+    0% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+
+    25% {
+        top: 400px;
+        left: 0;
+        background-color: blue;
+    }
+
+    50% {
+        top: 400px;
+        left: 400px;
+        background-color: green;
+    }
+
+    75% {
+        top: 0;
+        left: 400px;
+        background-color: rgb(255, 196, 0);
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+}
